@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>AIC - GNITS</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <!--css for image-->
+    <!-- Favicons -->
+    <link
+      href="https://www.gnits.ac.in/wp-content/uploads/2024/01/logo-300x289.jpeg"
+      rel="icon"
+    />
+    <link
+      href="https://www.gnits.ac.in/wp-content/uploads/2024/01/logo-300x289.jpeg"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1><a href="/index.html">AIC - GNITS</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Programs</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="/pages/program1.html">Program 1</a></li>
+                <li><a href="/pages/program2.html">Program 2</a></li>
+                <li><a href="/pages/program3.html">Program 3</a></li>
+              </ul>
+            </li>
+            <li><a href="start-ups.html">Startups</a></li>
+            <li><a href="offerings.html">Offerings</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <!-- Added Login button -->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Why Us Section ======= -->
+      <br />
+      <!-- Container for Highlights -->
+      <!-- Container for Highlights -->
+<div class="container headlines">
+  <!-- Headlines Section -->
+  <h6 class="scrolling-text">Highlights</h6>
+  <!-- Remove additional highlights as needed -->
+</div>
+
+<!-- Container for Slider -->
+<div class="container slider">
+  <!-- Image Slider Section -->
+    <div class="slider-controls">
+      <div class="slider-control prev">&#10094;</div>
+      <div class="slider-control next">&#10095;</div>
+    </div>
+    <div class="slides">
+      <img class="slide" src="assets/img/aicpic.jpg" alt="Image 1" />
+      <img class="slide" src="assets/img/aicpic2.jpg" alt="Image 2" />
+      <img class="slide" src="assets/img/aicpisss.jpg" alt="Image 3" />
+      <!-- Add more images here -->
+    </div>
+</div>
+
+          <script>
+            const slides = document.querySelector(".slides");
+            const prevButton = document.querySelector(".prev");
+            const nextButton = document.querySelector(".next");
+            let slideIndex = 0;
+
+            // Show the first slide
+            showSlide(slideIndex);
+
+            // Next/previous controls
+            prevButton.addEventListener("click", () => {
+              showSlide((slideIndex -= 1));
+            });
+
+            nextButton.addEventListener("click", () => {
+              showSlide((slideIndex += 1));
+            });
+
+            // Automatic slideshow
+            setInterval(() => {
+              showSlide((slideIndex += 1));
+            }, 2000);
+
+            function showSlide(index) {
+              const slidesLength = document.querySelectorAll(".slide").length;
+              if (index >= slidesLength) {
+                slideIndex = 0;
+              }
+              if (index < 0) {
+                slideIndex = slidesLength - 1;
+              }
+              slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+          </script>
+        </section>
+      </div>
+<br>
+<br>
+      <section class="why-us">
+  <div class="section-title">
+    <h2 data-aos="fade-up">Impact Created</h2>
+    <hr style="width: 50%; margin: auto; margin-bottom: 20px" />
+  </div>
+  <div class="icon-boxes d-flex justify-content-center">
+    <!-- Adjusted class -->
+    <table class="icon-table">
+  <tr>
+    <td class="icon-box-cell" data-aos="fade-up" data-aos-delay="100">
+      <div class="icon-box mt-4 mt-xl-0">
+        <i class="bx bx-receipt"></i>
+        <h4>Startups Incubated</h4>
+        <p>10+</p>
+      </div>
+    </td>
+    <td class="icon-box-cell" data-aos="fade-up" data-aos-delay="200">
+      <div class="icon-box mt-4 mt-xl-0">
+        <i class="bx bx-cube-alt"></i>
+        <h4>Events conducted</h4>
+        <p>10+</p>
+      </div>
+    </td>
+    <td class="icon-box-cell" data-aos="fade-up" data-aos-delay="300">
+      <div class="icon-box mt-4 mt-xl-0">
+        <i class="bx bx-images"></i>
+        <h4>Partnerships</h4>
+        <p>10+</p>
+      </div>
+    </td>
+    <td class="icon-box-cell" data-aos="fade-up" data-aos-delay="400">
+      <div class="icon-box mt-4 mt-xl-0">
+        <i class="bx bx-cube-alt"></i>
+        <h4>Skilled beneficiaries</h4>
+        <p>10+</p>
+      </div>
+    </td>
+    <td class="icon-box-cell" data-aos="fade-up" data-aos-delay="500">
+      <div class="icon-box mt-4 mt-xl-0">
+        <i class="bx bx-images"></i>
+        <h4>Number of Programs</h4>
+        <p>10+</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+                
+</section>
+
+
+      
+      <!-- End Why Us Section -->
+
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="section-title">
+          <h2 data-aos="fade-up">Our Parterns</h2>
+          <hr style="width: 50%; margin: auto; margin-bottom: 20px" />
+        </div>
+        <div class="container" data-aos="fade-up">
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="https://www.univariety.com/uploads/university/images/logo/caaae024_logo.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://blog.himanshusheth.net/wp-content/uploads/2016/05/SINE_IITB_Logo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://vectorseek.com/wp-content/uploads/2023/08/IIT-Kharagpur-Logo-Vector.svg-.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://media.licdn.com/dms/image/C4D0BAQE5l9o1O1aEBg/company-logo_200_200/0/1641494597509/resolute4ip_logo?e=1720656000&v=beta&t=WMxdvMe5DGlEAX0NiUBquAdnTmKTPAgHGxYr55-Litg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://escihyd.org/../assets/images/ESCILogo.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.altacit.com/wp-content/uploads/2020/09/logo-1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://1000logos.net/wp-content/uploads/2022/12/HubSpot-Logo.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://www.zoho.com/books/images/new/zoho-logo-new.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://collect.chat/../assets/images/ccdark.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://static.developerhub.io/landing/images/cometchat-a973e2b757dc2dfadddc866d58c01534.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://th.bing.com/th/id/R.1875b3cff08f241623c648049b40f45f?rik=e4n5mP8vYp7Yyw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fdigitalocean-logo-png-open-2000.png&ehk=S2aXISzheepg%2b37K2aghmpMZC1104kHUfuodLSEAoE4%3d&risl=&pid=ImgRaw&r=0"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://media.licdn.com/dms/image/C560BAQGC1DgpPXmViw/company-logo_200_200/0/1649054392543/testvox_logo?e=1720656000&v=beta&t=g0W3aosGWm3i_C4d4MlVHyYjoH8kDAXm0XJ1Cj2dvvk"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://th.bing.com/th/id/OIP.GAFU7_pPpY5wAQWe5t-ssgHaE2?rs=1&pid=ImgDetMain"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Clients Section -->
+     
+
+      <div class="section-title">
+        <h2 data-aos="fade-up">Activities</h2>
+        <hr style="width: 50%; margin: auto; margin-bottom: 20px" />
+      </div>
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container position-relative" data-aos="fade-up">
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://media.licdn.com/dms/image/D5622AQFY7gFl8okmxA/feedshare-shrink_800/0/1710997319556?e=1715212800&v=beta&t=CNEnp9cS634GT85sTovorPka-tbbYQqMvnfzzuqN4JU"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                  <div class="testimonial-item col-3">
+                    <img
+                      src="https://logodix.com/logo/649603.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Title</h3>
+                    <h4>Date</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+    
+      <!-- ======= Media  Section ======= -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-aos="fade-up">Our Insights</h2>
+
+            <hr style="width: 50%; margin: auto; margin-bottom: 20px" />
+            <p data-aos="fade-up"></p>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-podcast">Podcast</li>
+                <li data-filter=".filter-press-release">Press Release</li>
+                <li data-filter=".filter-events">Events</li>
+                <li data-filter=".filter-news-letter">Newsletter</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- Events -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-events">
+              <img
+                src="https://media.licdn.com/dms/image/D5622AQFY7gFl8okmxA/feedshare-shrink_800/0/1710997319556?e=1715212800&v=beta&t=CNEnp9cS634GT85sTovorPka-tbbYQqMvnfzzuqN4JU"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Market Research for the second cohort</h4>
+                <p>20th march,2024</p>
+                <a
+                  href="https://media.licdn.com/dms/image/D5622AQFY7gFl8okmxA/feedshare-shrink_800/0/1710997319556?e=1715212800&v=beta&t=CNEnp9cS634GT85sTovorPka-tbbYQqMvnfzzuqN4JU"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-events">
+              <img
+                src="https://media.licdn.com/dms/image/D5622AQG18umT1QhVsg/feedshare-shrink_1280/0/1708580638979?e=1715212800&v=beta&t=j1SVKfB9Pv7e6qrQ-z4dSAS2vtJ7g_-9RthKH2z5Rjs"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>ACIC CBIT Foundation</h4>
+                <p>21st February,2024</p>
+                <a
+                  href="https://media.licdn.com/dms/image/D5622AQG18umT1QhVsg/feedshare-shrink_1280/0/1708580638979?e=1715212800&v=beta&t=j1SVKfB9Pv7e6qrQ-z4dSAS2vtJ7g_-9RthKH2z5Rjs"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-events">
+              <img
+                src="https://media.licdn.com/dms/image/D5622AQGeAGaKFfUMaQ/feedshare-shrink_1280/0/1705566544205?e=1715212800&v=beta&t=86gI4DL2GpKOiJliAYcFKSJ1xSsefKHkojnQyg5-KwY"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>National Startup Day Celebrations</h4>
+                <p>1st December,2024</p>
+                <a
+                  href="https://media.licdn.com/dms/image/D5622AQGeAGaKFfUMaQ/feedshare-shrink_1280/0/1705566544205?e=1715212800&v=beta&t=86gI4DL2GpKOiJliAYcFKSJ1xSsefKHkojnQyg5-KwY"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-events">
+              <img
+                src="https://media.licdn.com/dms/image/D5622AQEXkR-Zn8q3jA/feedshare-shrink_1280/0/1702110643514?e=1715212800&v=beta&t=YPkkhz00Vl6CQPESZvMMD3syGXEzxt4ylATX5QI1LDg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Ideas were presented to Mr. N Venkatesh - Sr. Director</h4>
+                <p>11th November,2023</p>
+                <a
+                  href="https://media.licdn.com/dms/image/D5622AQEXkR-Zn8q3jA/feedshare-shrink_1280/0/1702110643514?e=1715212800&v=beta&t=YPkkhz00Vl6CQPESZvMMD3syGXEzxt4ylATX5QI1LDg"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Press Release -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-press-release">
+              <img
+                src="../assets/img/media/pr-1.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>TiE Grad Kickoff Session</h4>
+                <p>Oct 9, 2023</p>
+                <a
+                  href="../assets/img/media/pr-1.png"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="App 1"
+                  ><i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Podcasts -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-podcast">
+              <img
+                src="https://media.licdn.com/dms/image/D5622AQEP8XmSFLn2xg/feedshare-shrink_800/0/1694147595743?e=1715212800&v=beta&t=hSOUU3HRpeK84PxdKKvrAGBK6hTTZOFvvnoXOEjPNDw"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Curtain Raiser event at Bharat Blockchain Yatra</h4>
+                <p>August 6th, 2023</p>
+                <a
+                  href="https://media.licdn.com/dms/image/D5622AQEP8XmSFLn2xg/feedshare-shrink_800/0/1694147595743?e=1715212800&v=beta&t=hSOUU3HRpeK84PxdKKvrAGBK6hTTZOFvvnoXOEjPNDw"
+                  data-gallery="portfolioGallery"
+                  class="portfolio-lightbox preview-link"
+                  title="Web 3"
+                  ><i class="bx bx-plus"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- News Letters -->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <section id="maps" class="maps">
+        <!--  Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>
+            Find Us On Maps
+            <a
+              href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0032582322597!2d78.39612087411699!3d17.411631283479696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96b085001d67%3A0x4f48deff88efc042!2sG.%20Narayanamma%20Institute%20of%20Technology%20and%20Science!5e0!3m2!1sen!2sin!4v1712493175832!5m2!1sen!2sin"
+              style="font-size: small"
+              class="contact-link"
+            >
+              Click Here
+            </a>
+          </h2>
+          <div>
+            <iframe
+              style="border: 0; width: 100%; height: 350px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0032582322597!2d78.39612087411699!3d17.411631283479696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96b085001d67%3A0x4f48deff88efc042!2sG.%20Narayanamma%20Institute%20of%20Technology%20and%20Science!5e0!3m2!1sen!2sin!4v1712493175832!5m2!1sen!2sin"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <!-- End Section Title -->
+      </section>
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2 data-aos="fade-up">Get in Touch</h2>
+            <p data-aos="fade-up">We'd love to hear from you!</p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div
+              class="col-xl-3 col-lg-3 mt-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="info-box">
+                <i class="bx bxl-instagram"></i>
+                <h3>Instagram</h3>
+                <p>
+                  <a href="mailto:aic@gnits.ac.in" class="mail-link"
+                    >aic@gnits.ac.in</a
+                  >
+                </p>
+                <br />
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 mt-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="info-box">
+                <i class="bx bxl-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>
+                  <a href="mailto:aic@gnits.ac.in" class="mail-link"
+                    >aic@gnits.ac.in</a
+                  >
+                </p>
+                <br />
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-3 mt-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="info-box">
+                <i class="bx bx-envelope"></i>
+                <h3>Email Us</h3>
+                <p>
+                  <a href="mailto:aic@gnits.ac.in" class="mail-link"
+                    >aic@gnits.ac.in</a
+                  >
+                </p>
+                <br />
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-3 mt-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="info-box">
+                <i class="bx bx-phone-call"></i>
+                <h3>Call Us</h3>
+                <p>
+                  <a href="tel:enter-number-here" class="contact-link"
+                    >+91-9999999999</a
+                  >
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="row justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="col-xl-9 col-lg-12 mt-4">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <center>
+            <h3>AIC - GNITS</h3>
+            <p>
+              <a
+                href="https://www.google.co.in/maps/place/G.+Narayanamma+Institute+of+Technology+and+Science/@17.4116313,78.3961209,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb96b085001d67:0x4f48deff88efc042!8m2!3d17.4116313!4d78.3986958!16s%2Fg%2F1w3w1h_d?entry=ttu"
+                class="contact-link"
+              >
+                G. Narayanamma Institute of Technology & Science (for Women)
+                Hyderabad, Telangana 500104
+              </a>
+              <br /><br />
+              <!-- <strong>Phone:</strong> +1 5589 55488 55<br /> -->
+
+              <strong>Email:</strong>
+              <a href="mailto:aic@gnits.ac.in" class="mail-link"
+                >aic@gnits.ac.in</a
+              ><br />
+            </p>
+          </center>
+        </div>
+      </div>
+
+      <div class="container d-lg-flex py-4">
+        <div class="me-lg-auto text-center text-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>AIC - GNITS</span></strong
+            >. All Rights Reserved
+          </div>
+          <!-- <div class="credits">
+            Designed by <a href="">AIC</a>
+          </div> -->
+        </div>
+        <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+          <a href="mailto:aic@gnits.ac.in" class="gmail"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+          <a href="https://twitter.com/aicgnits" class="twitter"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/aic_gnits/" class="instagram">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/atal-incubation-centre-gnits-by-aim-niti-aayog/"
+            class="linkedin"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
